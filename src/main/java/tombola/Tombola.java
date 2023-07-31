@@ -29,14 +29,18 @@ public class Tombola {
 
     ArrayList<Integer> numeri = new ArrayList<>();
 
-    public void StampaNumeri(){
 
-        int j = 0;
-
+    public void init(){
         //Inizialiazzazione arrayList con i numeri da 1 a 90
         for(int i = 0; i < 90; i++){
             numeri.add(i+1);
         }
+    }
+    public void StampaNumeri(){
+
+        init();
+
+        int j = 0;
 
         //Stampa ed elimina dei valori
         for(j =0;j<20;j++) {
